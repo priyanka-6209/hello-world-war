@@ -16,7 +16,7 @@ pipeline {
                        
             steps {
                 script {
-                    app = docker.build("suhita/phoenix2.0")
+                    app = docker.build("suhita/samplejava")
                     app.inside {
                         sh 'echo $(curl localhost:80)'
                     }
