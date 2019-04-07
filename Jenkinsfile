@@ -16,7 +16,7 @@ pipeline {
                        
             steps {
                 script {
-                    app = docker.build("suhita/samplejava")
+                    app = docker.build("priyanka6209/samplejava")
                     app.inside {
                         sh 'echo $(curl localhost:80)'
                     }
