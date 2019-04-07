@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
               steps {
                   sh "mvn -B -DskipTests clean package"
-                  archiveArtifacts artifacts: 'target/app.war'
+                  archiveArtifacts artifacts: 'target/samplejava.war'
             }
         } 
         
